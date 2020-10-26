@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+div img {
+    position: absolute;
+    top:-300px;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+div input{
+    --ntp-realbox-height: 44px;
+    border-radius: calc(0.5 * var(--ntp-realbox-height));
+    box-shadow: 0 1px 6px rgba(124, 130, 150, 0.28);
+    height: var(--ntp-realbox-height);
+    background-color: var(white);
+    font-size: 16px;
+    position: relative;
+    top: -400px;
+    left: 150px;
+    width: 60%;
+    margin: auto;
+}
+
+
+input::placeholder {
+    color: rgba(95, 97, 104, 0.28)
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+</style>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google Home page</title>
+</head>
+<body>
+    <ul>
+        <li><a href="default.asp">Images</a></li>
+        <li><a href="news.asp">Gmail</a></li>
+      </ul>
+    <div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+
+    <div class="form">
+        <form action="https://www.google.com/">
+        <input type="text" id="search" placeholder="Search Google or type a URL">
+    </form>
+    </div>
+</body>
+</html>
